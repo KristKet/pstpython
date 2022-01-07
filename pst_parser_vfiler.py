@@ -53,7 +53,7 @@ def print_to_file() :
     create_file.write(content)
     create_file.close
 
-def send_email() :                                                          # Kommer bara köras om kommentar tas bort på rad 83 / remove comment line 83 to use mail
+def send_email() :                                                          # Kommer bara köras om kommentar tas bort på rad 73 / remove comment line 83 to use mail
     skicka_mail = win32com.client.Dispatch('Outlook.Application')
     mail = skicka_mail.CreateItem(0)                                        # Avsändare kommer bli Outlook kontot som är igång på datorn. / sender is current user
     mail.To = 'användare@domän'                                             # Hårdkodad mailadress kan läggas till här / add hard coded mail here
